@@ -1,0 +1,23 @@
+.center-block {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.btn {
+    background-color: #f1f1f1;
+    color: rgb(98, 0, 255);
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: rgb(116, 97, 185);
+    color: rgb(38, 0, 255);
+}
+
+a:hover {
+    text-decoration-color: lemonchiffon;
+    background-color: yellow;
+}
