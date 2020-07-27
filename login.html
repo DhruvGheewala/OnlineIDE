@@ -1,36 +1,44 @@
 <html lang="en">
 
 <head>
+    <link rel="stylesheet" href="css/styles.css">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login | OnlineIDE</title>
 </head>
 
-<body>
-    <h1>Login Page</h1>
+<body style="background-color: #f1f1c1;">
+    <h1 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;text-align: center;">Login Page</h1>
     <hr><br>
-    <div class="container">
-        <form action="editor.html" autocomplete="on" novalidate>
-            <div class="row">
-                <div class="col">
-                    <input type="text" name="uname" placeholder="Username" required><br><br>
-                    <input type="password" name="pass" placeholder="Password" required><br><br>
-                    <!-- <input type="submit" value="Login"> -->
-                    <button type="button"><a href="editor.html">Login</a></button>
-                </div>
-            </div>
-        </form>
-    </div>
 
-    <div class="bottom-container">
-        <div class="row">
-            <div class="col">
-                <a href="signup.html" style="color:rgb(0, 0, 0)" class="btn">Sign up</a>
-            </div>
-            <div class="col">
-                <a href="forgot.html" style="color:rgb(0, 0, 0)" class="btn">Forgot password?</a>
-            </div>
-        </div>
+    <div>
+        <form action="editor.html">
+            <table align="center">
+                <tr>
+                    <td>Name</td>
+                    <td><input class="center-block" type="text" placeholder="Username " style="border: firebrick;"></td>
+                </tr>
+                <tr>
+                    <td>Password</td>
+                    <td><input class="center-block" type="password" placeholder="Password" style="border: firebrick;"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Remember Me</td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><button type="submit" class="btn">submit</button></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><a href="signup.html">Signup</a></button>
+                    </td>
+                </tr>
+            </table>
+        </form>
     </div>
 </body>
 
