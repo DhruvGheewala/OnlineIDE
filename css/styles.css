@@ -2,22 +2,41 @@
     display: block;
     margin-right: auto;
     margin-left: auto;
+    border-style: solid;
 }
 
-.btn {
-    background-color: #f1f1f1;
-    color: rgb(98, 0, 255);
-    border: none;
+.btn,
+a {
+    background-color: cornflowerblue;
+    color: whitesmoke;
+    border-radius: 5px;
+    border: None;
     cursor: pointer;
     text-align: center;
+    text-decoration-line: none;
 }
 
-.btn:hover {
-    background-color: rgb(116, 97, 185);
-    color: rgb(38, 0, 255);
-}
-
+.btn:hover,
 a:hover {
-    text-decoration-color: lemonchiffon;
-    background-color: yellow;
+    color: darkblue;
+    background-color: white;
 }
+
+.box-pad {
+    padding: 30px;
+    padding-top: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+}
+
+.box {
+    background-color: #fff;
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+}
+
+
+/* .mt-2 {
+    margin-top: 8px!important;
+} */
