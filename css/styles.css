@@ -1,57 +1,94 @@
-a,
-.btn {
-    background-color: cornflowerblue;
-    color: whitesmoke;
-    border: 0px;
+body {
     text-align: center;
-    cursor: pointer;
-    text-decoration: none;
-    padding: 5px;
-    border-radius: 7px;
+    /* background-color: gainsboro; */
+    background-color: #d8beaf;
 }
 
-a:hover,
-.btn:hover {
-    color: darkblue;
-    background-color: white;
+textarea {
+    width: 75%;
+    height: 75%;
+    min-height: 250px;
+    overflow: scroll;
+    margin: auto;
+    display: inline-block;
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+    outline: none;
+    font-size: 16px;
 }
 
-
-/* .center-block {
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-    border-style: solid;
-}
-
-.btn,
 a {
-    background-color: cornflowerblue;
-    color: whitesmoke;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    color: blue;
+    /* background-color: #3258A6; */
+    /* border-collapse: collapse; */
     border-radius: 5px;
-    border: None;
-    cursor: pointer;
-    text-align: center;
-    text-decoration-line: none;
+    border: 0px;
+    /* border-spacing: 0px; */
+    padding: 3px 5px;
+    font-size: 16px;
 }
 
-.btn:hover,
 a:hover {
+    /* background-color: white; */
     color: darkblue;
-    background-color: white;
+    font-size: 20px;
 }
 
-.box-pad {
-    padding: 30px;
-    padding-top: 30px;
-    padding-right: 30px;
-    padding-bottom: 30px;
-    padding-left: 30px;
+.inp {
+    background-color: white;
+    border: 0px;
+    border-radius: 5px;
+    padding: 8px 6px;
 }
 
 .box {
-    background-color: #fff;
-    border: 1px solid #e1e4e8;
-    border-radius: 6px;
+    background-color: #EDDDD4;
+    position: absolute;
+    border-radius: 15px;
+    padding: 10px 30px 15px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 0px;
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.5), -6px -6px 20px;
 }
-*/
+
+.gradient-text {
+    /* gradient color */
+    background: linear-gradient(to left, #001964, #3258A6, #77ACF2);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    font-size: 34px;
+}
+
+.gradient-text:hover {
+    /* gradient color */
+    background: linear-gradient(to left, #001964, #3258A6, #77ACF2);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    font-size: 50px;
+}
+
+button {
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: whitesmoke;
+    transition-duration: 0.4s;
+    background-color: #3258A6;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: white;
+    color: black;
+    font-size: 20px;
+}

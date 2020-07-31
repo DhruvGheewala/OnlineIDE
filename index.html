@@ -1,43 +1,26 @@
 <html lang="en">
 
 <head>
+    <meta charset="UTF-8">
     <link rel="stylesheet" href="fonts/Merriweather.zip">
     <link rel="stylesheet" href="css/styles.css">
-    <meta charset="UTF-8">
+
     <title>Login | OnlineIDE</title>
 </head>
 
-<body style="background-color: #f1f1c1;">
-    <h1 style="font-family: Merriweather;text-align: center;">Login Page</h1>
-    <hr><br>
-
-    <form action="editor.html" method="GET">
-        <table align="center" style="border: None;">
-            <tr>
-                <td>Name</td>
-                <td><input class="center-block" type="text" placeholder="Username" name="name"></td>
-            </tr>
-            <tr>
-                <td>Password</td>
-                <td><input class="center-block " type="password " placeholder="Password" name="pass"></td>
-            </tr>
-            <tr>
-                <td></td>
-            </tr>
-        </table>
-        <table align="center">
-            <tr>
-                <td><input type="checkbox" id="Remember">Remember Me</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td>
-                    <a href="editor.html" type="submit " class="btn ">submit</a></td>
-            </tr>
-            <tr>
-                <a href="signup.html ">Signup</a></td>
-            </tr>
-        </table>
+<body>
+    <form action="editor.html">
+        <div class="box">
+            <a href=index.html style="border: 0px" class="gradient-text">Log In</a><br><br><br>
+            <input type="text " name="uname " placeholder="Username " class="inp "><br><br>
+            <input type="password " name="pass " placeholder="Password " class="inp "><br><br>
+            <button>Login</button>
+            <br><br><br><br>
+            <div>
+                <a href="signup.html">Create New Acoount</a> &nbsp;|&nbsp;
+                <a href="forgot.html">Forgot Password</a>
+            </div>
+        </div>
     </form>
 </body>
 

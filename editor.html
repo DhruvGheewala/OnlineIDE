@@ -3,28 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fonts/Merriweather.zip">
+    <link rel="stylesheet" href="css/styles.css">
     <title>Home | OnlineIDE</title>
 </head>
 
-<body>
+<body style="background-color: gainsboro;">
     <h2>Editor</h2>
     <hr><br>
-    <form method="POST">
-        <label for="lang">Language : </label>
-        <select name="lang" id="lang">
+    <form>
+        <nav>
+            <label for="lang">Language : </label>
+            <select name="lang" id="lang" style="cursor: pointer;border-radius: 10px;">
             <option value="cpp">C++</option>
             <option value="js">JavaScript</option>
             <option value="python">Python</option>
             <option value="java">Java</option>
         </select>&emsp;
-        <button type="button"><a href="archive.html">My Codes</a></button>&emsp;
-        <button type="button"><a href="#">Save</a></button>
-        <br><br>
+            <a href="archive.html">My Codes</a>
+            <a href="#">Save</a>
+        </nav>
 
-        <!-- Need To Set -->
-        <textarea name="editor" cols="75" rows="40"></textarea><br><br>
-        <button type="button"><a href="#" style="color:rgb(0, 0, 0)" class="btn">Compile</a></button>&nbsp;
-        <button type="button"><a href="#" style="color:rgb(0, 0, 0)" class="btn">Run</a></button>
+        <br><br>
+        <textarea name="editor" placeholder="// Write Your Code Here"></textarea><br><br>
+        <a href="#" id="compile-run">Compile</a>
 
     </form>
 </body>
