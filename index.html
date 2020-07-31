@@ -1,24 +1,25 @@
 <html lang="en">
 
 <head>
+    <link rel="stylesheet" href="fonts/Merriweather.zip">
     <link rel="stylesheet" href="css/styles.css">
     <meta charset="UTF-8">
     <title>Login | OnlineIDE</title>
 </head>
 
 <body style="background-color: #f1f1c1;">
-    <h1 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;text-align: center;">Login Page</h1>
+    <h1 style="font-family: Merriweather;text-align: center;">Login Page</h1>
     <hr><br>
 
-    <form action="editor.html">
+    <form action="editor.html" method="GET">
         <table align="center" style="border: None;">
             <tr>
                 <td>Name</td>
-                <td><input class="center-block" type="text" placeholder="Username"></td>
+                <td><input class="center-block" type="text" placeholder="Username" name="name"></td>
             </tr>
             <tr>
                 <td>Password</td>
-                <td><input class="center-block " type="password " placeholder="Password"></td>
+                <td><input class="center-block " type="password " placeholder="Password" name="pass"></td>
             </tr>
             <tr>
                 <td></td>
@@ -30,11 +31,11 @@
             </tr>
             <tr>
                 <td></td>
-                <td><button type="submit" class="btn">submit</button></td>
+                <td>
+                    <a href="editor.html" type="submit " class="btn ">submit</a></td>
             </tr>
             <tr>
-                <td><button class="btn"><a href="signup.html">Signup</a></button></td>
-
+                <a href="signup.html ">Signup</a></td>
             </tr>
         </table>
     </form>

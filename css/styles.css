@@ -1,4 +1,23 @@
-.center-block {
+a,
+.btn {
+    background-color: cornflowerblue;
+    color: whitesmoke;
+    border: 0px;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 7px;
+}
+
+a:hover,
+.btn:hover {
+    color: darkblue;
+    background-color: white;
+}
+
+
+/* .center-block {
     display: block;
     margin-right: auto;
     margin-left: auto;
@@ -35,8 +54,4 @@ a:hover {
     border: 1px solid #e1e4e8;
     border-radius: 6px;
 }
-
-
-/* .mt-2 {
-    margin-top: 8px!important;
-} */
+*/
