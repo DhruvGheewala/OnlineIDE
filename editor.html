@@ -3,16 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="fonts/Merriweather.zip">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/dropdown.css">
+    <script src="scripts/compile.js"></script>
     <title>Home | OnlineIDE</title>
+
 </head>
 
-<body style="background-color: gainsboro;">
-    <h2>Editor</h2>
+<body>
+    <a href=editor.html class="header">Code Editor</a>
     <hr><br>
-    <form>
-        <nav>
+    <ul>
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Language</a>
+            <div class="dropdown-content">
+                <a href="#C++">C++</a>
+                <a href="#Java">Java</a>
+                <a href="#Python">Python</a>
+            </div>
+        </li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#news">News</a></li>
+    </ul>
+
+    <!-- <nav>
             <label for="lang">Language : </label>
             <select name="lang" id="lang" style="cursor: pointer;border-radius: 10px;">
             <option value="cpp">C++</option>
@@ -22,13 +36,11 @@
         </select>&emsp;
             <a href="archive.html">My Codes</a>
             <a href="#">Save</a>
-        </nav>
+        </nav> -->
 
-        <br><br>
-        <textarea name="editor" placeholder="// Write Your Code Here"></textarea><br><br>
-        <a href="#" id="compile-run">Compile</a>
-
-    </form>
+    <br><br>
+    <textarea name="editor" placeholder="// Write Your Code Here" style="background-color: #caf0f8;"></textarea><br><br>
+    <button id="compile-run" onclick="compilerun()">Compile</button>
 </body>
 
 </html>

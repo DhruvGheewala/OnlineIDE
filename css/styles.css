@@ -1,7 +1,7 @@
 body {
     text-align: center;
-    /* background-color: gainsboro; */
-    background-color: #d8beaf;
+    background-color: #ade8f4;
+    /* background-color: #d8beaf; */
 }
 
 textarea {
@@ -20,9 +20,8 @@ textarea {
 a {
     transition-duration: 0.4s;
     text-decoration: none;
-    color: blue;
-    /* background-color: #3258A6; */
-    /* border-collapse: collapse; */
+    /* color: blue; */
+    color: #03045e;
     border-radius: 5px;
     border: 0px;
     /* border-spacing: 0px; */
@@ -36,6 +35,23 @@ a:hover {
     font-size: 20px;
 }
 
+button {
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: whitesmoke;
+    transition-duration: 0.4s;
+    background-color: #3258A6;
+    background-color: #0077b6;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: white;
+    color: black;
+    font-size: 20px;
+}
+
 .inp {
     background-color: white;
     border: 0px;
@@ -44,7 +60,8 @@ a:hover {
 }
 
 .box {
-    background-color: #EDDDD4;
+    /* background-color: #EDDDD4; */
+    background-color: #90e0ef;
     position: absolute;
     border-radius: 15px;
     padding: 10px 30px 15px;
@@ -55,9 +72,20 @@ a:hover {
     box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.3), -6px -6px 20px;
 }
 
+.header {
+    border: 0px;
+    font-size: 34px;
+    color: #023e8a;
+}
+
+.header:hover {
+    font-size: 40px;
+    color: #03045e;
+}
+
 .gradient-text {
     /* gradient color */
-    background: linear-gradient(to left, #001964, #3258A6, #77ACF2);
+    background: linear-gradient(to left, #03045e, #023e8a, #0077b6);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -68,27 +96,11 @@ a:hover {
 
 .gradient-text:hover {
     /* gradient color */
-    background: linear-gradient(to left, #001964, #3258A6, #77ACF2);
+    background: linear-gradient(to left, #0077b6, #023e8a, #03045e);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
-    font-size: 50px;
-}
-
-button {
-    border: 1px solid;
-    border-radius: 5px;
-    padding: 5px 10px;
-    color: whitesmoke;
-    transition-duration: 0.4s;
-    background-color: #3258A6;
-    font-size: 16px;
-}
-
-button:hover {
-    background-color: white;
-    color: black;
-    font-size: 20px;
+    font-size: 40px;
 }
