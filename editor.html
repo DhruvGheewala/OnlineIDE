@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/dropdown.css">
+    <link rel="icon" href="statics/title-icon.png" type="image/png">
     <script src="scripts/compile.js"></script>
     <title>Home | OnlineIDE</title>
 
@@ -12,35 +12,33 @@
 
 <body>
     <a href=editor.html class="header">Code Editor</a>
-    <hr><br>
-    <ul>
-        <li class="dropdown">
-            <a href="javascript:void(0)" class="dropbtn">Language</a>
-            <div class="dropdown-content">
-                <a href="#C++">C++</a>
-                <a href="#Java">Java</a>
-                <a href="#Python">Python</a>
-            </div>
-        </li>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#news">News</a></li>
-    </ul>
+    <hr>
 
-    <!-- <nav>
-            <label for="lang">Language : </label>
-            <select name="lang" id="lang" style="cursor: pointer;border-radius: 10px;">
-            <option value="cpp">C++</option>
-            <option value="js">JavaScript</option>
-            <option value="python">Python</option>
-            <option value="java">Java</option>
-        </select>&emsp;
+    <div>
+        <div id="left-nav">
+            <a href="index.html">Home</a>
             <a href="archive.html">My Codes</a>
             <a href="#">Save</a>
-        </nav> -->
+        </div>
+        <div id="right-nav">
 
-    <br><br>
-    <textarea name="editor" placeholder="// Write Your Code Here" style="background-color: #caf0f8;"></textarea><br><br>
-    <button id="compile-run" onclick="compilerun()">Compile</button>
+        </div>
+    </div>
+    <nav>
+        <a href="index.html" class="a-special">Home</a>
+        <a href="archive.html" class="a-special">My Codes</a>
+        <label for="lang"></label>
+        <select name="lang" id="lang" style="cursor: pointer;border-radius: 10px;">
+            <option value="cpp">C++</option>
+            <option value="py">Python</option>
+            <option value="java">Java</option>
+        </select>
+    </nav>
+
+    <aside>
+        <textarea name="editor" placeholder="// Write Your Code Here" spellcheck="false"></textarea>
+    </aside><br>
+    <button id="compile-run " onclick="compilerun() ">Compile</button>
 </body>
 
 </html>
