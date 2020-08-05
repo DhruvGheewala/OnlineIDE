@@ -27,7 +27,7 @@ function compilerun() {
     if (lang) {
 
         var tag = document.getElementById('compile-run');
-        if (tag == 'Run') {
+        if (tag.textContent === 'Run') {
             // Run the compiled code
 
             // Redirect
