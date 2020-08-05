@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing Web | Online IDE</title>
+</head>
+
+<body>
+    <h3 id="my_name"></h3>
+    <script type="text/javascript">
+        var timeout = 100;
+        setInterval(() => {
+            var value = 'Made By Dhruv Gheewala'
+            tag = document.getElementById("my_name");
+            var n = tag.textContent.length;
+
+            if (value.length === n) {
+                color_this();
+                tag.textContent = ''
+            } else {
+                var ch = value.charAt(n);
+                tag.textContent = tag.textContent.concat(ch);
+                if (ch === ' ')
+                    timeout = 0;
+            }
+        }, timeout);
+    </script>
+
+    <script>
+        var timeout = 100;
+        setInterval(color_this, timeout);
+
+        function color_this() {
+            colors = [];
+        }
+    </script>
+</body>
+
+</html>
