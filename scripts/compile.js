@@ -1,3 +1,5 @@
+// const { default: compileRun } = require("compile-run");
+
 function reverse(str) {
     return str.split('').reverse().join('');
 }
@@ -20,24 +22,37 @@ function getURL() {
     return cur_url;
 }
 
-function compilerun() {
+function giveLang() { return document.getElementById('lang').value; }
 
-    var lang = extract_lang(getURL());
-    console.log('lang : ' + lang);
-    if (lang) {
-
-        var tag = document.getElementById('compile-run');
-        if (tag.textContent === 'Run') {
-            // Run the compiled code
-
-            // Redirect
-        } else {
-            // Start Compilation
-
-            // At the end change compile buttont to submit button
-            tag.textContent = 'Run';
-        }
+function compileRun() {
+    var lang = giveLang();
+    if (lang == 'default') {
+        alert('Please Select The Language !!');
         return;
     }
-    alert('Please Select The Language !!');
+
+    var tag = document.getElementById('compile-run');
+    if (tag.textContent === 'Run') {
+        // Run the compiled code
+
+        // Redirect
+    } else {
+        // Start Compilation
+
+        // At the end change compile buttont to submit button
+        tag.textContent = 'Run';
+    }
+}
+
+function changeLabel() {
+    var lang = giveLang();
+    // console.log(lang);
+    if (lang == 'py') {
+        var tag = document.getElementById('compile-run');
+        // console.log(tag);
+        tag.textContent = 'Run';
+    } else {
+        var tag = document.getElementById('compile-run');
+        tag.textContent = 'Compile';
+    }
 }

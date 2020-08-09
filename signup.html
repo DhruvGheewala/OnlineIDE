@@ -3,23 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
     <title>Sign Up</title>
 </head>
 
 <body>
-    <h1>Registration Page</h1>
-    <form action="login.html" novalidate>
-        <hr><br>
-        <div class="row">
-            <div class="col">
-                <input type="email" name="email" placeholder="Email" required><br><br>
-                <input type="text" name="uname" placeholder="Username" required><br><br>
-                <input type="password" name="pass" placeholder="Password" required><br><br>
-                <input type="password" name="repass" placeholder="Confirm Password" required><br><br>
-                <input type="submit" value="Signup">
-            </div>
-        </div>
-    </form>
-</body>
+    <div class="box">
+        <a href="signup.html" class="header">Register</a>
+        <br><br><br>
+        <table>
+            <tr>
+                <td><span>Email: </span></td>
+                <td><input type="email" id="email" placeholder="Email" class="inp"><br><br></td>
+            </tr>
+
+            <tr>
+                <td>
+                    <span>Username:</span>
+                </td>
+                <td>
+                    <input type="text" id="uname" placeholder="Username" class="inp"><br><br>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <span>Passwrod:</span>
+                </td>
+                <td>
+                    <input type="password" id="pass" placeholder="Password" class="inp"><br><br>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <span>Confirm Password:</span>
+                </td>
+                <td>
+                    <input type="password" id="repass" placeholder="Confirm Password" class="inp"><br><br>
+                </td>
+            </tr>
+        </table>
+        <button onclick="check()">Register</button>
+        <span id="warning-box" class="warning-box"></span>
+        <br><br><br><br>
+
+        <script src="scripts/app.js"></script>
+        <script src="scripts/validate.js"></script>
 
 </html>

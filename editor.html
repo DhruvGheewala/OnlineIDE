@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" href="statics/title-icon.png" type="image/png">
-    <script src="scripts/compile.js"></script>
     <title>Home | OnlineIDE</title>
 
 </head>
@@ -14,31 +13,45 @@
     <a href=editor.html class="header">Code Editor</a>
     <hr>
 
-    <div>
-        <div id="left-nav">
-            <a href="index.html">Home</a>
-            <a href="archive.html">My Codes</a>
-            <a href="#">Save</a>
-        </div>
-        <div id="right-nav">
-
-        </div>
-    </div>
     <nav>
         <a href="index.html" class="a-special">Home</a>
         <a href="archive.html" class="a-special">My Codes</a>
         <label for="lang"></label>
-        <select name="lang" id="lang" style="cursor: pointer;border-radius: 10px;">
+        <select name="lang" id="lang" onchange="changeLabel()">
+            <option value="default">Select the language</option>
             <option value="cpp">C++</option>
             <option value="py">Python</option>
             <option value="java">Java</option>
         </select>
     </nav>
 
+    <br><br>
+    <br><br>
+
     <aside>
-        <textarea name="editor" placeholder="// Write Your Code Here" spellcheck="false"></textarea>
+        <!-- tooltip is remaining -->
+        Tab:
+        <label for="tab"></label>
+        <select name="tab" id="tab-size">
+            <option value="2" class="tooltip">
+                2
+                <!-- <span class="tooltiptext">Recomanded</span> -->
+            </option>
+            <option value="4">4</option>
+            <option value="4">6</option>
+            <option value="8" class="tooltip" onchange="addToolTip(this, 'Not Recomanded')">
+                8
+            </option>
+        </select>
+        <br>
+        <!-- <div class="tooltip">Hover over me <span class="tooltiptext">Tooltip text</span></div> -->
+        <textarea id="txtarea" name="editor" placeholder="// Write Your Code Here" spellcheck="false"></textarea>
     </aside><br>
-    <button id="compile-run " onclick="compilerun() ">Compile</button>
+    <button id="compile-run" onclick="compileRun()">Compile</button>
+
+    <script src="scripts/app.js"></script>
+    <script src="scripts/compile.js"></script>
+    <script src="scripts/textarea.js"></script>
 </body>
 
 </html>

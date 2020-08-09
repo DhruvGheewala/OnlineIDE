@@ -2,7 +2,6 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="fonts/Merriweather.zip">
     <link rel="icon" href="statics/title-icon.png" type="image/png">
     <link rel="stylesheet" href="css/styles.css">
 
@@ -10,20 +9,28 @@
 </head>
 
 <body>
-    <form action="editor.html" method="GET">
-        <div class="box">
-            <a href=index.html class="header">Login</a>
-            <br><br><br>
-            <input type="text" name="uname" placeholder="Username" class="inp"><br><br>
-            <input type="password" name="pass" placeholder="Password" class="inp"><br><br>
-            <button>Login</button>
-            <br><br><br><br>
-            <div style="color:blue">
-                <a href="signup.html">Create New Acoount</a> &nbsp;|&nbsp;
-                <a href="forgot.html">Forgot Password</a>
-            </div>
+    <div class="box">
+        <a href=index.html class="header">Login</a>
+        <br><br><br>
+
+        <!-- <form action="scripts/validate.js" method="POST"> -->
+        <span>Username: </span><input type="text" id="uname" placeholder="Username" class="inp" value="user1">
+        <br><br>
+        <span>Password: </span><input type="password" id="pass" placeholder="Password" class="inp" value="user1">
+        <br><br>
+        <button onclick="validate()">Login</button>
+        <span id="warning-box" class="warning-box"></span>
+        <br><br><br><br>
+        <!-- </form> -->
+
+        <div style="color:blue">
+            <a href="signup.html">Create New Acoount</a> &nbsp;|&nbsp;
+            <a href="forgot.html">Forgot Password</a>
         </div>
-    </form>
+    </div>
+
+    <script src="scripts/app.js"></script>
+    <script src="scripts/validate.js"></script>
 </body>
 
 </html>
