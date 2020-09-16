@@ -97,10 +97,8 @@ function getLangTemplate() {
 }
 
 $(document).ready(function() {
-
     // Set Default or Prefered language
     $('#lang').text(getPreferedLang());
-
 
     // Set the content of textarea with defualt or given template by user
     $('#txt-area').text(getLangTemplate());
@@ -116,5 +114,5 @@ $(document).ready($('.lang-selector').click(function(e) {
 
     $('#lang').text($(this).text());
     var temp = getLangTemplate();
-    $('#txt-area').text(temp);
+    $('#txt-area').val(temp);
 }));
