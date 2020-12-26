@@ -1,0 +1,13 @@
+.container {
+    margin: 5px;
+}
+
+.row {
+    padding-left: 5%;
+    padding-right: auto;
+}
+
+.card {
+    width: 85%;
+    background-color: #f44336;
+}

@@ -1,0 +1,32 @@
+<h4 class="text-center py-4">Available Themes</h4>
+
+<div class="contanier">
+    <!-- Row -->
+    <div class="row" *ngFor="let row of themes">
+        <!-- Coloum -->
+        <div class="col-lg-4 col-mb-12 mb-4" *ngFor="let theme of row">
+            <!-- Card -->
+            <div class="card">
+                <!-- Image -->
+                <div class="view">
+                    <img src="" [alt]="theme['caption']">
+                    <a href="#">
+                        <div class="mask"></div>
+                    </a>
+                </div>ś
+
+                <!-- Content -->
+                <div class="card-body text-center  rounded-bottom">
+                    <!-- Title -->
+                    <h4 class="card-title white-text">{{theme['caption']}}</h4>
+                    <!-- Text -->
+                    <p class="card-text white-text">
+                        Dark Theme: {{themes['isDark'] === true ? 'Yes' : 'No'}}
+                    </p>
+                    <a href="#" class="btn btn-outline-white btn-md waves-effect" (click)="setTheme()">Select</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

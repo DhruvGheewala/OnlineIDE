@@ -1,0 +1,59 @@
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark danger-color scrolling-navbar">
+    <!-- Brand -->
+    <strong class="navbar-brand">OnlineIDE</strong>
+
+    <!-- Navbar -->
+    <div class="collapse navbar-collapse">
+        <ul class="navbar-nav mr-auto">
+            <!-- Archive -->
+            <li class="nav-item" routerLinkActive="active">
+                <a class="nav-link" href="/archive">Archive</a>
+            </li>
+
+            <!-- Editor -->
+            <li class="nav-item" routerLinkActive="active">
+                <a class="nav-link" href="/editor">Editor</a>
+            </li>
+
+            <!-- Themes -->
+            <li class="nav-item" routerLinkActive="active">
+                <a class="nav-link" href="/themes">Themes</a>
+            </li>
+
+            <!-- Reference -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fas fa-book"></i>Reference
+                </a>
+
+                <div class="dropdown-menu dropdown-menu-right dropdown-danger">
+                    <a class="dropdown-item" href="http://www.cplusplus.com/doc/tutorial/" target="_blank">C++</a>
+                    <a class="dropdown-item" href="https://docs.python.org/3/" target="_blank">Python</a>
+                    <a class="dropdown-item" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+                        target="_blank">JavaScript</a>
+                    <a class="dropdown-item" href="https://docs.oracle.com/en/java/javase/14/" target="_blank">Java</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="https://docs.microsoft.com/en-us/dotnet/csharp/"
+                        target="_blank">C#</a>
+                    <a class="dropdown-item" href="https://devdocs.io/html/" target="_blank">HTML</a>
+                    <a class="dropdown-item" href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+                        target="_blank">CSS</a>
+                </div>
+            </li>
+        </ul>
+
+
+        <ul class="navbar-nav nav-flex-icons">
+            <!-- Login -->
+            <li class="nav-item" routerLinkActive="active">
+                <a class="nav-link" href="/forms/login"><i class="fas fa-sign-in-alt"></i>Login</a>
+            </li>
+
+            <!-- Register -->
+            <li class="nav-item" routerLinkActive="active">
+                <a class="nav-link" href="/forms/register">Register</a>
+            </li>
+        </ul>
+    </div>
+</nav>

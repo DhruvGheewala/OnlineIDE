@@ -1,0 +1,52 @@
+
+<div class="container center" [ngClass]="formObj" id="container">
+    
+    <!-- Login-Form -->
+	<div class="form-container login-container">
+        <div class="box">
+            <h1>Login</h1>
+            <app-social></app-social>
+            
+            <input type="text" placeholder="Email" [(ngModel)]="eid"/>
+            <input type="password" placeholder="Password" [(ngModel)]="pass"/>
+            <a href="#">Forgot your password?</a>
+			<button (click)="loginClicked()">Login</button>
+        </div>
+    </div>
+    
+    <!-- Register-Form -->
+    <div class="form-container register-container">
+        <div class="box">
+            <h1>Create Account</h1>
+            <app-social></app-social>
+            
+            <input type="text" placeholder="Name" id="uname" [(ngModel)] = "uname"/>
+            <input type="text" placeholder="Email" id="eid" [(ngModel)] = "eid"/>
+            <span>{{eidErr}}</span>
+            <input type="password" placeholder="Password" id="pass" [(ngModel)] = "pass"/>
+            <input type="password" placeholder="Confirm Password" id="cpass" [(ngModel)] = "cpass"/>
+            <span>{{passErr}}</span>
+            <button (click)="registerClicked()">Register</button>
+        </div>
+    </div>
+    
+    <!-- overlay -->
+	<div class="overlay-container">
+        <div class="overlay">
+            <!-- overlay for login -->
+            <div class="overlay-panel overlay-right">
+                <h1>Hello, Friend!</h1>
+				<p>Enter your personal details and start journey with us</p>
+				<button class="ghost" (click)="openRegister()">Don't have an account</button>
+			</div>
+            
+            <!-- overlay for Register-->
+            <div class="overlay-panel overlay-left">
+                <h1>Welcome Back!</h1>
+                <p>To keep connected with us please enter your personal info and register yourself</p>
+                <button class="ghost" (click)="openLogin()">Already Have an acount</button>
+            </div>
+		</div>
+    </div>
+    
+</div>

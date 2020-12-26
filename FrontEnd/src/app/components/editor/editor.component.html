@@ -1,0 +1,22 @@
+<div class="container my-2">
+    <div class="head">
+        <div class="left">
+            <select (change)="setMode($event.target.value)">
+                <option [value]="mode['name']" *ngFor="let mode of modes">{{mode['caption']}}</option>
+            </select>
+        </div>
+
+        <div class="right">
+            <a class="btn-floating btn-sm btn-default mx-2" (click)="clearCode()"><i class="fas fa-trash"></i></a>
+            <a class="btn-floating btn-sm btn-default mx-2" (click)="beautifyContent()"><i class="fas fa-indent"></i></a>
+        </div>
+    </div>
+    <div class="code-editor w-100 h-100" #codeEditor></div>
+
+    <div class="row mt-4">
+        <div class="col">
+            <div class="label-box border"><span class="mx-4 font-weight-light">Output</span></div>
+            <textarea class="form-control output" rows="6" disabled="true" aria-label="output-textarea"></textarea>
+        </div>
+    </div>
+</div>
